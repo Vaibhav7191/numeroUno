@@ -1,0 +1,33 @@
+{
+  "name": "seed",
+  "version": "1.0.0",
+  "description": "seed for mean",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaibhav7191/numeroUno.git"
+  },
+  "keywords": [
+    "seed",
+    "mean",
+    "javascript",
+    "node.js"
+  ],
+  "author": "vaibhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaibhav7191/numeroUno/issues"
+  },
+  "homepage": "https://github.com/Vaibhav7191/numeroUno#readme",
+  "dependencies": {
+    "express": "4.16.2",
+    "http": "0.0.0",
+    "mongoose": "5.0.1",
+    "nodemon": "1.14.11",
+    "socket.io": "2.0.4"
+  }
+}
