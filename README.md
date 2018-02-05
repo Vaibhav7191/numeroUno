@@ -1,2 +1,2 @@
 # numeroUno
-Starter for Nodejs web applications. Cheers.
+Starter for Nodejs web applications.

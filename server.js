@@ -22,6 +22,7 @@ db.once('open',()=>{
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true,limit:"2mb"}))
 
+//Uncomment the next line when the AngularJs code is ready.
 // app.use(express.static(path.join(__dirname,'assets')));
 app.use((req,res,next)=>{
 	res.header('Access-Control-Allow-Origin','*')
@@ -31,6 +32,7 @@ app.use((req,res,next)=>{
 
 app.use('/admin',admin)
 
+//To use server and socket.io on the same port
 io=io.listen(server)
 server.on('listening',(err,result)=>{
 	console.log("Server is up and listening.")

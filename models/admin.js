@@ -3,7 +3,8 @@ const Schema=mongoose.Schema;
 
 let admin=new Schema({
 	name:{
-		type:String
+		type:String,
+		match:[/^[vaibhav]+$/,"Name does not match my name"] //plug in any regex you want to use.
 	},
 	email:{
 		type:String,
