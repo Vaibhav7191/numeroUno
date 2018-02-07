@@ -6,8 +6,8 @@ const mongoose=require('mongoose');
 const path=require('path')
 const bodyParser=require('body-parser');
 
-const admin=require('./routes/admin');
-const config=require('./config/config-dev')
+const admin=require('./server/routes/admin');//admin routes
+const config=require('./config/config-dev')//config file contains all the constants 
 
 mongoose.connect(config.mongodb,{
 	// useMongoClient:true
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true,limit:"2mb"}))
 
 //Uncomment the next line when the AngularJs code is ready.
-// app.use(express.static(path.join(__dirname,'assets')));
+app.use(express.static(path.join(__dirname,'client/assets')));
 app.use((req,res,next)=>{
 	res.header('Access-Control-Allow-Origin','*')
 	res.header('Access-Control-Allow-Headers','Origin,X-Requested-With,Content-Type,Accept')

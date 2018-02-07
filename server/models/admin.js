@@ -20,5 +20,3 @@ let admin=new Schema({
 })
 
 module.exports=mongoose.model('admin',admin,'admin');
-
-// admin.pre('save',())
